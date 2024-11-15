@@ -5,6 +5,8 @@ on:
     # only trigger on branches, not on tags
     branches: '**'
 
+permissions: write-all
+
 jobs:
   build:
     runs-on: ubuntu-latest
