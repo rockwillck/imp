@@ -10,8 +10,8 @@ tagline = conf["tagline"]
 homecta = conf["cta"]
 
 subs = {}
-navDiv = "\n".join(map(lambda a : f'<a href="../{a}/index.html">{a}</a>',os.listdir('raws')))
-for dir in os.listdir('raws'):
+navDiv = "\n".join(map(lambda a : f'<a href="../{a}/index.html">{a}</a>',sorted(os.listdir('raws'))))
+for dir in sorted(os.listdir('raws')):
     try:
         shutil.rmtree(dir)
     except:
@@ -19,7 +19,7 @@ for dir in os.listdir('raws'):
     os.mkdir(dir)
     allArt = []
     featured = []
-    for f in os.listdir(f'raws/{dir}'):
+    for f in sorted(os.listdir(f'raws/{dir}')):
         with open(f'raws/{dir}/{f}', 'r') as cont:
             lines = cont.readlines()
             title = lines[0].strip()
