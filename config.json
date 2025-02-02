@@ -1,5 +1,6 @@
 {
     "name": "Imp",
     "tagline": "Powered by <i>Imp</i>.",
-    "cta": ["Learn more about Imp", "#"]
+    "cta": ["Learn more about Imp", "#"],
+    "nav": []
 }
