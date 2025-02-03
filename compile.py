@@ -9,7 +9,6 @@ name = conf["name"]
 tagline = conf["tagline"]
 homecta = conf["cta"]
 navOrder = conf["nav"]
-icon = conf["icon"]
 
 subs = {}
 dirs = sorted(os.listdir('raws')) if len(navOrder) == 0 else navOrder
@@ -39,13 +38,15 @@ for dir in dirs:
 	<meta name="description" content="{sub}" />
 	<link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="../article.css" />
-	<link rel="icon" href="{icon}">
+	<link rel="icon" href="../assets/icon.svg">
 </head>
 <body>
 	<div class="site">
 		<div class="nav">
 			<h1><a href="/">{name}</a></h1>
+            <div class="navlinks">
             {navDiv}
+            </div>
 		</div>
         <div class="content">
             <div class="header" style="background-image:url({bg})"></div>
@@ -83,13 +84,15 @@ for dir in subs.keys():
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="description" content="{tagline}" />
 	<link rel="stylesheet" type="text/css" href="../style.css" />
-	<link rel="icon" href="{icon}">
+	<link rel="icon" href="../assets/icon.svg">
 </head>
 <body>
 	<div class="site">
 		<div class="nav">
 			<h1><a href="/">{name}</a></h1>
+            <div class="navlinks">
             {navDiv}
+            </div>
 		</div>
 		<div class="banner" id="banner" data-bg="{featured[2]}">
 			<div class="caption">
@@ -128,13 +131,15 @@ with open('index.html', 'w') as homepage:
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="description" content="{tagline}" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="icon" href="{icon}">
+	<link rel="icon" href="assets/icon.svg">
 </head>
 <body>
 	<div class="site">
 		<div class="nav">
 			<h1><a href="/">{name}</a></h1>
-			{navDiv}
+			<div class="navlinks">
+            {navDiv}
+            </div>
 		</div>
 		<div class="banner" id="banner" data-bg="assets/landing.png">
 			<div class="caption">
