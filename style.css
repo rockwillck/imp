@@ -81,6 +81,7 @@ h2 {
 	position: relative;
 	left: 0;
 	top: 0;
+	padding: 30px;
 	margin: 0 30px 30px 30px;
 	width: calc(100% - 60px);
 	height: calc(90% - 60px);
@@ -91,9 +92,6 @@ h2 {
 	justify-content: end;
 	align-items: start;
 	box-shadow: inset 0 -20vh 100px var(--spec-black);
-}
-.banner > .caption {
-	margin: 0 0 50px 50px;
 }
 .caption > * {
 	margin: 0;
@@ -114,19 +112,6 @@ h2 {
 .cta:hover {
 	background-color: white;
 	color: var(--spec-accent);
-}
-
-
-@media (max-width:600px) {
-	.banner > .caption > .cta {
-		position: absolute;
-		right: 0px;
-		bottom: 70px;
-		rotate: -90deg;
-	}
-	.caption {
-		max-width: 70%;
-	}
 }
 
 .banner, .card {
@@ -191,11 +176,6 @@ h2 {
 	text-align: center;
 	background: transparent;
 }
-/* @media (max-width:720px) {
-	.card {
-		width: 100% !important;
-	}
-} */
 
 a {
 	color: white;
