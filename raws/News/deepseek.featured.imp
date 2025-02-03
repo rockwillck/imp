@@ -1,0 +1,17 @@
+Deepseek
+An AI bomb... or is it?
+../assets/deepseek.bmp
+
+Deepseek has launched, and it's been... a week. A cheaper, faster, (partially) open-source model is great for the AI world - OpenAI has had a vice-like grip on the industry for a little too long, and it's exciting to have a new competitor on the block.
+
+But we also need to be careful: Deepseek is a Chinese model, and in my testing, it refused to answer questions about topics including the Tiananmen Square Massacre and Xi Jinping's resemblance to Winnie the Pooh. It also outright claimed Taiwan as Chinese territory, quoting the "One-China Principle".
+
+![Deepseek claims Taiwan as Chinese territory](../assets/ds/1.bmp)![Deepseek refuses to answer](../assets/ds/2.bmp)
+
+And this warning doesn't just apply to Deepseek; we must be cautious about every LLM we use, because LLMs are black boxes that we can't see inside, even when they're open source. Without access to the data they were trained on, Deepseek, ChatGPT, Claude, and others pose direct threats to our ability to perceive the truth.
+
+That's especially true for the generations before and after us. Our grandparents grew up without the Internet, so they struggle to discern truth from deception. It's already been true with Facebook and other social media where misinformation runs rampant, but tools like AI can lie without even meaning to. And our children will grow up with AI, be it LLMs or some other form, as much a staple of their lives as smartphones are a staple of ours. That is just as dangerous, if not more, than the plight of our elders.
+
+Nonetheless, Deepseek is exciting. It's API pricing is pennies compared to OpenAI, and it's incredibly fast for what appears to be an on-par reasoning model with o1. Even OpenAI's chief sponsor, Microsoft, was rapid to adopt Deepseek and make it available on Azure. 
+
+So cheers, to hoping that this might just get OpenAI back on track.

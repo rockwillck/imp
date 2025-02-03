@@ -1,6 +1,6 @@
 {
-    "name": "Imp",
-    "tagline": "Powered by <i>Imp</i>.",
-    "cta": ["Learn more about Imp", "#"],
-    "nav": []
+    "name": "willyck",
+    "tagline": "A tech blog.",
+    "cta": ["Learn more", "About/intro.html"],
+    "nav": ["About", "News", "3D Printers", "Synths"]
 }

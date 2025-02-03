@@ -1,11 +1,20 @@
 :root {
 	--rad:10px;
 	--spec-black: rgb(14, 14, 14);
-	--spec-accent:rgb(46, 13, 105);
+	--spec-accent:rgb(86, 107, 192);
+}
+
+@font-face {
+	font-family: ClashR;
+	src: url(assets/ClashDisplay-Regular.ttf);
+}
+@font-face {
+	font-family: ClashS;
+	src: url(assets/ClashDisplay-Semibold.ttf);
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ClashR, Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: var(--spec-black);
@@ -13,7 +22,7 @@ body {
 }
 
 h1, h2 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ClashS, Arial, Helvetica, sans-serif;
 	margin:0;
 }
 h1 {
@@ -47,6 +56,12 @@ h2 {
 	position: relative;
 	text-decoration: none;
 	padding: 5px;
+	overflow: hidden;
+}
+@media (max-width:450px) {
+	.nav > a {
+		scale: 0;
+	}
 }
 .nav > a::after {
 	content: "";

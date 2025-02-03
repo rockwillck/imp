@@ -11,8 +11,9 @@ homecta = conf["cta"]
 navOrder = conf["nav"]
 
 subs = {}
-navDiv = "\n".join(map(lambda a : f'<a href="../{a}/index.html">{a}</a>',sorted(os.listdir('raws') if len(navOrder) == 0 else navOrder)))
-for dir in sorted(os.listdir('raws')):
+dirs = sorted(os.listdir('raws')) if len(navOrder) == 0 else navOrder
+navDiv = "\n".join(map(lambda a : f'<a href="../{a}/index.html">{a}</a>',dirs))
+for dir in dirs:
     try:
         shutil.rmtree(dir)
     except:
