@@ -1,6 +1,7 @@
 {
-    "name": "willyck",
-    "tagline": "A tech blog.",
-    "cta": ["Learn more", "About/intro.html"],
-    "nav": ["About", "News", "3D Printers", "Synths"]
+    "name": "Imp",
+    "tagline": "Simple blogging",
+    "cta": ["Learn more", "#"],
+    "nav": [],
+    "icon": "../assets/icon.svg"
 }

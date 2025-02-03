@@ -9,6 +9,7 @@ name = conf["name"]
 tagline = conf["tagline"]
 homecta = conf["cta"]
 navOrder = conf["nav"]
+icon = conf["icon"]
 
 subs = {}
 dirs = sorted(os.listdir('raws')) if len(navOrder) == 0 else navOrder
@@ -38,7 +39,7 @@ for dir in dirs:
 	<meta name="description" content="{sub}" />
 	<link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="../article.css" />
-	<link rel="icon" href="../assets/icon.svg">
+	<link rel="icon" href="{icon}">
 </head>
 <body>
 	<div class="site">
@@ -82,7 +83,7 @@ for dir in subs.keys():
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="description" content="{tagline}" />
 	<link rel="stylesheet" type="text/css" href="../style.css" />
-	<link rel="icon" href="../assets/icon.svg">
+	<link rel="icon" href="{icon}">
 </head>
 <body>
 	<div class="site">
@@ -127,7 +128,7 @@ with open('index.html', 'w') as homepage:
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="description" content="{tagline}" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="icon" href="assets/icon.svg">
+	<link rel="icon" href="{icon}">
 </head>
 <body>
 	<div class="site">

@@ -1,10 +1,10 @@
 # Imp
-Highly opinionated blogging
+Simple, customizable blogging
 
 ## What is Imp?
 Imp is a tool for generating beautiful blogs.  
 
-Because Imp was built for [Pine](https://pine.hwalgi.org), it's incredibly opinionated.  
+It's very opinionated about design.
 
 That's not to say you can't customize Imp sites: the entirety of the sites styling is summarized in `style.css` and `article.css`.
 
@@ -16,7 +16,7 @@ Second line = subtitle
 Third line = background image
 
 # Rich markdown text
-> here.
+here.
 ```
 
 ## Quickstart
@@ -25,12 +25,15 @@ First, clone this repository. Then, proceed.
 Change the values in `config.json` to match your blog.
 ```json
 {
-    "name": "NAME",
-    "tagline": "TAGLINE, could include HTML",
-    "cta": ["LINK TEXT", "LINK HREF"]
+    "name": "Imp",
+    "tagline": "Simple blogging",
+    "cta": ["Learn more", "#"],
+    "nav": [],
+    "icon": "../assets/icon.svg"
 }
 ```
-The `cta` field defines the call to action link that will be in the hero section of your home page.
+The `cta` field defines the call to action link that will be in the hero section of your home page.  
+The `nav` field can remain as is. If you want to define the order in which your categories (directories) appear in your top nav, you can define that there.
 ### raws/
 The only other place you have to touch to get started is the `raws/` directory. Under `raws/`, add a directory. The name of this directory should be the name of a category of your blog. For example, you might create a directory `raws/Desserts` if you were working on a recipe website.
 
@@ -39,6 +42,8 @@ Under this inner directory, add a file ending in `.featured.imp`. The pre-suffix
 Fill the file with as explained above in the `.imp` section.
 
 The `.featured` in the file extension tells Imp that this is the featured article for a category. Every category must have a featured article.
+### Fonts
+Imp ships with default font Arial, but you can modify that in `style.css`.
 ### Compile
 Then, push your repository to GitHub. The actions workflow under `.github/` should compile the raws into their correct HTML format.  
 
