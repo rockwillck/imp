@@ -203,8 +203,9 @@ a {
 }
 
 footer {
-	font-size: 11px;
-	margin:10px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 .cta::after {

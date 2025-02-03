@@ -163,6 +163,7 @@ with open('index.html', 'w') as homepage:
                 ))
             }
 		</div>
+		<footer>Powered by <a href="https://github.com/rockwillck/imp">Imp</a>.</footer>
 	</div>
 	<script src="app.js"></script>
 </body>
